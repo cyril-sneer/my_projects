@@ -152,14 +152,6 @@ def sort_dict_rec(inbound_dict:dict) -> dict:
         sorted_dict[min_key] = inbound_dict.pop(min_key)
         sorted_dict.update(sort_dict_rec(inbound_dict))
         return sorted_dict
-    # if len(inbound_dict) > 1:
-    #     sorted_dict = {}
-    #     min_key = min(inbound_dict.keys())
-    #     sorted_dict[min_key] = inbound_dict.pop(min_key)
-    #     sorted_dict.update(sort_dict_rec(inbound_dict))
-    #     return sorted_dict
-    # else:
-    #     return inbound_dict
 
 
 def sort_dict_iter(inbound_dict:dict) -> dict:
